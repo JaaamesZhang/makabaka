@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VPN 一键导入</title>
+
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #0f172a;
+      color: #e5e7eb;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .box {
+      background: #020617;
+      padding: 28px;
+      border-radius: 14px;
+      max-width: 420px;
+      width: 100%;
+      box-shadow: 0 20px 40px rgba(0,0,0,.6);
+      text-align: center;
+    }
+    h1 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 14px;
+      color: #94a3b8;
+      margin-bottom: 24px;
+    }
+    a.button {
+      display: block;
+      text-decoration: none;
+      padding: 14px;
+      margin-bottom: 14px;
+      border-radius: 10px;
+      font-size: 15px;
+      font-weight: 500;
+      transition: transform .05s ease, opacity .15s ease;
+    }
+    a.button:active {
+      transform: scale(0.98);
+      opacity: .9;
+    }
+    .vless {
+      background: #2563eb;
+      color: #fff;
+    }
+    .ss {
+      background: #16a34a;
+      color: #fff;
+    }
+    .tip {
+      font-size: 12px;
+      color: #64748b;
+      margin-top: 8px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <h1>VPN 配置导入</h1>
+    <p>点击按钮后，浏览器会询问是否打开 VPN 客户端</p>
+
+    <!-- ✅ VLESS -->
+    <a class="button vless"
+       href="vless://383c515c-4956-44e4-8d4e-653a862da292@8.219.174.243:443?flow=xtls-rprx-vision&fp=firefox&pbk=ZSv-oXuma31Sk3z9xFZLM7i7RWlXfB_g_Wt0kWWaLQc&security=reality&sni=downloaddispatch.itunes.apple.com&type=tcp#vless-reality">
+      🚀 导入 VLESS（Reality）
+    </a>
+
+    <!-- ✅ Shadowsocks -->
+    <a class="button ss"
+       href="ss://YWVzLTI1Ni1nY206cG1GRFpBVE54TFlqSHZlZVhoc2xkVjhqMGs4dkZyVldWTjZ0K0N5TCtxMD0=@8.219.174.243:38871">
+      🔐 导入 Shadowsocks
+    </a>
+
+    <div class="tip">
+      如果没有弹窗，请确认已安装对应 VPN 客户端
+    </div>
+  </div>
+</body>
+</html>
